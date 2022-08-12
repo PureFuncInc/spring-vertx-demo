@@ -1,15 +1,13 @@
-package com.example.demo;
+package com.example.demo.origin;
 
 import com.example.demo.config.VertxConfig;
 import io.vertx.core.Vertx;
-import io.vertx.core.buffer.Buffer;
-import io.vertx.core.net.NetClient;
 import io.vertx.core.net.NetSocket;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class TcpClient1Test {
+public class TcpClient2Test {
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
@@ -23,12 +21,13 @@ public class TcpClient1Test {
                 });
 
                 for (int i = 0; i < 1000; i++) {
-                    socket.write("ping" + VertxConfig.CR);
+                    socket.write("vincent" + VertxConfig.CR);
                 }
             } else {
                 log.error(netSocketAsyncResult.cause().toString(), netSocketAsyncResult.cause());
             }
         });
+
         Thread.sleep(Integer.MAX_VALUE);
     }
 }

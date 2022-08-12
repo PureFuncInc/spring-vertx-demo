@@ -1,5 +1,5 @@
 # spring-vertx-demo
-* Vert.x 是一個基質於 Netty 的框架，寫起來會比 Netty 更直觀一點
+* Vert.x 是一個基植於 Netty 的框架，寫起來會比 Netty 更直觀一點
 
 # Step
 * SpringVertxDemoApplication -> Server
